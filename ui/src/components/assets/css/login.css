@@ -1,0 +1,170 @@
+:root {
+    --primary-color: rgba(218, 37, 221, 0.473);
+    --primary-solid: rgba(218, 37, 221, 1);
+    --dark-bg: #121212;
+    --darker-bg: #0a0a0a;
+    --light-text: #f0f0f0;
+    --border-radius: 8px;
+}
+
+.login-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw !important;
+    background-color: #000 !important;
+}
+
+.login-container {
+    background-color: var(--darker-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-login {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+.logo-login p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--light-text);
+
+}
+
+.logo-login img {
+    height: 146px;
+    margin-top: -4rem;
+    scale: 2;
+    cursor: pointer;
+}
+
+.wallet-connect {
+    margin-bottom: 1.5rem;
+}
+
+.wallet-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.wallet-btn:hover {
+    background-color: rgba(218, 37, 221, 0.1);
+    border-color: var(--primary-solid);
+}
+
+.wallet-btn i {
+    margin-right: 8px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.divider::before {
+    margin-right: 1rem;
+}
+
+.divider::after {
+    margin-left: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    color: var(--light-text);
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-solid);
+}
+
+.checkbox-group {
+    margin-top: 1.5rem;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.checkbox-option input {
+    margin-right: 0.8rem;
+    accent-color: var(--primary-solid);
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--primary-color);
+}
+
+.submit-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--primary-solid);
+    border-radius: var(--border-radius);
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgba(218, 37, 221, 0.2);
+}
